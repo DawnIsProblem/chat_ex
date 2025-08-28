@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>Chat • Room</title>
+    <link rel="stylesheet" href="/css/app.css" />
+
+    <!-- CDN: SockJS + StompJS -->
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+
+    <script src="/js/chat.js" defer></script>
+</head>
+<body class="wrap">
+    <div class="row between">
+        <h1>채팅</h1>
+        <button id="leave">나가기</button>
+    </div>
+
+    <div id="meta" class="dim"></div>
+
+    <div id="msgs" class="msglist"></div>
+
+    <form id="send" class="row">
+        <input id="text" placeholder="메시지 입력" autocomplete="off" />
+        <button type="submit">전송</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>Chat • Rooms</title>
+    <link rel="stylesheet" href="/css/app.css" />
+    <script src="/js/rooms.js" defer></script>
+</head>
+<body class="wrap">
+<h1>채팅방</h1>
+
+<div class="card">
+    <h2>내 정보</h2>
+    <div>사용자 ID: <span id="me"></span></div>
+    <div>닉네임: <span id="nick"></span></div>
+</div>
+
+<div class="grid">
+    <form id="create-form" class="card">
+        <h2>방 만들기</h2>
+        <button type="submit">새 방 만들기</button>
+        <div id="create-result" class="dim"></div>
+    </form>
+
+    <form id="join-form" class="card">
+        <h2>초대 코드로 입장</h2>
+        <label>방 코드
+            <input id="roomCode" placeholder="예) ABC123" required />
+        </label>
+        <button type="submit">입장</button>
+        <div id="join-result" class="dim"></div>
+    </form>
+</div>
+</body>
+</html>

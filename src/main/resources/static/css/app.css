@@ -1,0 +1,79 @@
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+}
+
+.wrap {
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+h1, h2 {
+    margin: 0 0 12px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.row {
+    display: flex; gap: 8px;
+    align-items: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    margin: 8px 0;
+}
+
+input {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 90%;
+    align-items: center;
+}
+
+button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #999;
+    background: #f7f7f7;
+    cursor: pointer;
+}
+
+.dim {
+    color: #666;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.msglist {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    min-height: 240px;
+    padding: 12px;
+    margin: 16px 0;
+    background: #fafafa;
+}
+
+.msg {
+    padding: 8px 10px;
+    margin: 4px 0;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
