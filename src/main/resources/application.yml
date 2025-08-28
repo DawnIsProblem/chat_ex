@@ -1,0 +1,32 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  config:
+    import: optional:file:.env.properties
+    profiles:
+      active: local
+
+  datasource:
+    url: jdbc:mysql://localhost:${MYSQL_PORT:3306}/chat
+    username: ${USER_NAME:root}
+    password: ${USER_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # data.sql run (always or never)
+  sql:
+    init:
+      mode: never
+
+  jpa:
+    show-sql: true
+
+    hibernate:
+      ddl-auto: create
+
+    properties:
+      hibernate:
+        format_sql: true
+
+    # run data.sql
+    defer-datasource-initialization: true
