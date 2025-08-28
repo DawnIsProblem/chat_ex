@@ -2,8 +2,12 @@
 이 프로젝트는 **WebSocket과** **Stomp를** 이용하여 채팅방을 생성하고 실시간 채팅을 할 수 있는 예제를 다룬 프로젝트입니다.
 프론트 페이지는 **thymeleaf를** 사용하여 간단하게 작성하였습니다.
 
+---
+
 ### 🚀 How To Run
 `./gradlew bootRun`
+
+---
 
 ### 🛠️ Skill
 | 구분            | 스택/도구                                                                                                    |
@@ -12,6 +16,8 @@
 | **DB**        | `MySQL` |
 | **Frontend**  | 정적 `HTML` + 바닐라 `JS`<br>`SockJS`<br>`STOMP.js`|
 | **옵션(확장 준비)** | `StompAuthInterceptor` (추후 `JWT` 연동 대비)|
+
+---
 
 ### 📍 Flow
 1. 닉네임 입력
@@ -26,6 +32,8 @@
 - 메시지 전송은 /app/chat.send 로 발행
 - 나가기는 POST /rooms/leave 후 /rooms로 복귀
 - 입장/퇴장/대화 메시지는 모두 DB에 저장되고 구독자에게 브로드캐스트
+
+---
 
 ### 📷 Test Result
 <img width="1502" height="884" alt="스크린샷 2025-08-28 오후 6 31 11" src="https://github.com/user-attachments/assets/3d9b93ce-9d85-4b67-bebe-4f3c4f2e3a9b" />
